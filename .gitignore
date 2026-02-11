@@ -148,3 +148,6 @@ vite.config.ts.timestamp-*
 # MacOS
 .DS_Store
 
+# Windows
+Thumbs.db
+
