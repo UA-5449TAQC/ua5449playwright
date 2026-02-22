@@ -18,7 +18,7 @@ console.log (empty + " is type of", typeof(empty));
 console.log (obj + " is type of", typeof(obj));
 console.log ( symb, typeof(symb));
 
-// 02 dynamyc types
+// 02 dynamic types
 
 var x
 console.log(typeof(x));
@@ -46,6 +46,10 @@ console.log(typeof(toNumber));
 
 toNumber2 = +str;
 console.log(typeof(toNumber2));
+
+console.log(parseInt("12.75px")); // перетворює в число 12.75 і повертає цілу частину числа
+console.log(parseFloat("12.75px")); // перетворює в число 12.75 число разом зі значенням після крапки
+console.log(parseInt("text")); // повертає NaN оскільки не може перетворити текст в число
 
 //05
 
