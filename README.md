@@ -7,6 +7,7 @@ ua5449playwright - це репозиторій для виконання дом�
 - [hw01 - Git Branching](hw/hw01/README.md)
 - [hw02 - js base](hw/hw02/README.md)
 - [hw03 - Operators. Type conversions. Arrays. Conditional statement.](hw/hw03/README.md)
+- [hw04 -  Loops.](hw/hw04/README.md)
 
 
 # 📚 Як здавати домашні завдання
