@@ -11,11 +11,6 @@ console.log(a**2);
 
 //2. Інкремент та декремент
 let x = 5;
-/*
-1. Використайте префіксний інкремент.
-2. Використайте постфіксний інкремент.
-3. Використайте префіксний декремент.
-4. Поясніть різницю між префіксною та постфіксною формами.*/
 
 console.log(++x); 
 console.log(x++);
@@ -40,9 +35,7 @@ console.log("10" + true); // Результат: "10true" (булеве знач
 console.log("10" - true); // Результат: 9 (рядок "10" перетворюється на число, а true на 1, потім виконується віднімання)
 
 //5.Порівняння та строга рівність
-/*
-Поясніть різницю між `==` та `===`.
-*/
+
 console.log(false == 0);
 console.log(false === 0);
 console.log("1" == 1);
@@ -84,23 +77,6 @@ console.log(isNaN(undefined));
 `isNaN(undefined)` - повертає true, оскільки undefined не можна конвертувати в число.*/
 
 //9. Робота з масивами
-/*
-Створіть масив:
-
-```js
-const cities = ["Rome", "Lviv", "Warsaw"];
-```
-
-Виконайте:
-
-1. Замініть перший елемент.
-2. Додайте елемент у кінець масиву.
-3. Додайте елемент на початок.
-4. Видаліть останній елемент.
-5. Виведіть довжину масиву.
-6. Створіть новий масив, використовуючи `slice()`.
-7. Використайте `map()` для створення нового масиву з довжиною назв міст.
-*/
 
 const cities = ["Rome", "Lviv", "Warsaw"];
 cities[0] = "Kyiv";
@@ -115,4 +91,27 @@ console.log(newCities);
 const cityLengths = cities.map(city => city.length);
 console.log(cityLengths);
 
+//10. Умовні конструкції
 
+let number = 15;
+if (number > 0) {
+  console.log("Positive")
+} else if (number < 0){
+  console.log ("Negative")
+}else {
+  console.log ("Zero")
+}
+
+switch (true) {
+    case number > 0:
+        console.log('Positive');
+        break;
+    case number < 0:
+        console.log('Negative');
+        break;
+    case number === 0:
+        console.log('Zero');
+        break;
+}
+let newresult = number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero";
+console.log(newresult);
