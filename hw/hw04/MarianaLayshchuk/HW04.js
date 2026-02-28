@@ -63,3 +63,46 @@ console.log(users);
   }
   console.log(k);
 }
+
+// 7
+const car = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2022,
+  color: "black"
+};
+
+for (let key in car) {
+  console.log(`${key}: ${car[key]}`);
+}
+
+// 8
+const prices = [150, 200, 50, 430, 100];
+
+let all_price = 0;
+
+for (let n of prices) {
+  all_price += n;
+}
+console.log(all_price)
+
+// 9
+
+let message = "JavaScript";
+
+for (let char of message) {
+  console.log(char + "-");
+}
+
+// 10
+
+const my_array = [12, 45, 7, 89, 23, 56];
+let max = my_array[0];
+
+for (let i = 1; i < my_array.length; i++) {
+  if (my_array[i] > max) {
+    max = my_array[i]; // оновлюємо max, якщо знаходимо більше число
+  }
+}
+
+console.log("Найбільше число:", max);
