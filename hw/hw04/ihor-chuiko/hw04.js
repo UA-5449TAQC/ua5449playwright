@@ -71,12 +71,12 @@ console.log(users);
         //04 optional
 
         const users4 = ["ivan", "olga", "petro", "anna"];
-        i = 0;
+        i4 = 0;
 
         do {
-            users4[i] = users4[i][0].toUpperCase() + users4[i].slice(1);
-            i++;
-        } while (i < users4.length);
+            users4[i4] = users4[i4][0].toUpperCase() + users4[i4].slice(1);
+            i4++;
+        } while (i4 < users4.length);
         console.log(users4);
 
 //05 
