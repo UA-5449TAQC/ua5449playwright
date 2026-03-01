@@ -7,13 +7,13 @@ for (let i = 0; i <= 20; i++) {
 }
         //01 optional
 
-        let i = 0;
+        let i1 = 0;
 
-        while (i <= 20) {
-            if (i % 2 == 0 ) {
-                console.log(i);
+        while (i1 <= 20) {
+            if (i1 % 2 == 0 ) {
+                console.log(i1);
             }
-                i++;
+                i1++;
         }
 
 //02
@@ -48,16 +48,15 @@ console.log("final sum " + sum_of_numbers);
 
         //03 optional
 
-        const numbers = [55, 6, 1, 3, 4];
-        let i = 0;
-        let sum_of_numbers = 0;
+        const numbers3 = [55, 6, 2, 3, 4];
+        let sum_of_numbers3 = 0;
 
-        for (i = 0; i < numbers.length; i++) {
-            if (numbers[i] != 0) {
-                sum_of_numbers += numbers[i];
+        for (i = 0; i < numbers3.length; i++) {
+            if (numbers3[i] != 0) {
+                sum_of_numbers3 += numbers3[i];
             } else break
         }
-        console.log("final sum " + sum_of_numbers);
+        console.log("final sum " + sum_of_numbers3);
 
 
 //04 
@@ -71,14 +70,14 @@ console.log(users);
 
         //04 optional
 
-        const users = ["ivan", "olga", "petro", "anna"];
+        const users4 = ["ivan", "olga", "petro", "anna"];
         i = 0;
 
         do {
-            users[i] = users[i][0].toUpperCase() + users[i].slice(1);
+            users4[i] = users4[i][0].toUpperCase() + users4[i].slice(1);
             i++;
-        } while (i < users.length);
-        console.log(users);
+        } while (i < users4.length);
+        console.log(users4);
 
 //05 
 
@@ -95,11 +94,11 @@ console.log("Знайдено 7 ");
         //05 optional
 
         numbersBreak = [2, 4, 6, 71, 73, 7, 7 ,4];
-        let i = 0;
+        let i5 = 0;
 
-        while (numbersBreak[i] != 7 && i < numbersBreak.length) {
-            console.log(i + " елемент масиву не 7")
-            i++;
+        while (numbersBreak[i5] != 7 && i5 < numbersBreak.length) {
+            console.log(i5 + " елемент масиву не 7")
+            i5++;
         }
         console.log("Знайдено 7 ");
 
@@ -115,14 +114,14 @@ for (i = 1; i <= 15; i++) {
 
         //06 optional
 
-        let i = 1;
+        let i6 = 1;
 
         do {
-            if (i % 3 != 0) {
-                console.log(i + " не ділиться на 3");
+            if (i6 % 3 != 0) {
+                console.log(i6 + " не ділиться на 3");
             }
-            i++;
-        } while (i <= 15);
+            i6++;
+        } while (i6 <= 15);
 
 //07
 
@@ -149,15 +148,15 @@ console.log(total);
 
         //08 optional
 
-        const prices = [-150, 200, 50, 430, 100];
-        let total = 0;
-        let i = 0;
+        const prices8 = [-150, 200, 50, 430, 100];
+        let total8 = 0;
+        let i8 = 0;
 
         do {
-            total += prices[i];
-            i++;
-        } while (i < prices.length)
-        console.log(total);
+            total8 += prices8[i8];
+            i8++;
+        } while (i8 < prices8.length)
+        console.log(total8);
 
 //09
 
@@ -169,11 +168,11 @@ for (letter of message) {
 
         //09 optional
 
-        let message = "JavaScript";
-        i = 0;
-        while (i < message.length) {
-            console.log(message[i] + "-");
-            i++;
+        let message2 = "JavaScript";
+        i9 = 0;
+        while (i9 < message2.length) {
+            console.log(message2[i9] + "-");
+            i9++;
         }
 
 //10
@@ -190,15 +189,15 @@ console.log(max_numb);
 
         //10 optional
 
-        const random_numb = [-1, -8, 4, -33, 5, -4, -10, 344];
-        let max_numb = random_numb[0];
-        let i = 0;
+        const random_numb2 = [-1, -8, 4, -33, 5, -4, -10, 344];
+        let max_numb2 = random_numb2[0];
+        let i10 = 0;
 
-        while (i < random_numb.length) {
-            if (random_numb[i] > max_numb) {
-                max_numb = random_numb[i];
+        while (i10 < random_numb2.length) {
+            if (random_numb2[i10] > max_numb2) {
+                max_numb2 = random_numb2[i10];
             }
-            i++;
+            i10++;
         }
-        console.log(max_numb);
+        console.log(max_numb2);
         
