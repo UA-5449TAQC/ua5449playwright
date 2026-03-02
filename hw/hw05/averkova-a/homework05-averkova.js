@@ -210,11 +210,11 @@ function demonstrateScope() {
     let x = 50; 
     function innerScope() {
         let x = 10;
-        console.log('Inner scope uses x = ' + x);
+        console.log(`Inner scope uses x = ${x}`);
     }
 
     innerScope();
-    console.log('Outer scope uses x = ' + x); // innerScope returned 10 but didn't rewrite the outer X, so it will be 50 here
+    console.log(`Outer scope uses x = ${x}`); // innerScope returned 10 but didn't rewrite the outer X, so it will be 50 here
 
 }
 demonstrateScope();
