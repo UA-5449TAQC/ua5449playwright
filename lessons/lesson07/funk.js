@@ -1,6 +1,8 @@
+"use strict";
 // function add(a: number, b: number): number {
 //     return a + b;
 // }
+Object.defineProperty(exports, "__esModule", { value: true });
 // function greet(name: string): string {
 //     return `Hello, ${name}!`;
 // }
@@ -34,13 +36,39 @@
 // dispMessage("Hello, World!", "Alice", 123); // Output: "[Alice] Hello, World! 123"
 // dispMessage("Hello, World!", undefined, 123); // Output: "[DefUser] Hello, World! 123"
 // dispMessage("Hello, World!", "Bob", 123); // Output: "[Bob] Hello, World! 123"
-function concatStrings() {
-    var strings = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        strings[_i] = arguments[_i];
-    }
-    console.log(strings);
-    return strings.join(" ");
+function concatStrings(...values) {
+    console.log(values);
+    return values.join(" ");
 }
 console.log(concatStrings("Hello", "World", "from", "TypeScript")); // Output: "Hello World from TypeScript"
 console.log(concatStrings("This", "is", "a", "test")); // Output: "This is a test"
+var Operation;
+(function (Operation) {
+    Operation["Add"] = "+";
+    Operation["Subtract"] = "-";
+    Operation["Multiply"] = "*";
+    Operation["Divide"] = "/";
+})(Operation || (Operation = {}));
+function opNumbers(op, ...numbers) {
+    let result = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        switch (op) {
+            case Operation.Add:
+                result += numbers[i];
+                break;
+            case Operation.Subtract:
+                result -= numbers[i];
+                break;
+            case Operation.Multiply:
+                result *= numbers[i];
+                break;
+            case Operation.Divide:
+                result /= numbers[i];
+                break;
+        }
+    }
+    return result;
+}
+console.log(opNumbers(Operation.Add, 1, 2, 3)); // Output: 6
+console.log(opNumbers(Operation.Multiply, 2, 3, 4, 5, 6)); // Output: 720
+//# sourceMappingURL=funk.js.map

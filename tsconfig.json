@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "strict": true
+  },
+  "include": ["hw/**/*.ts"],
+  "exclude": ["node_modules", "lessons"]
+}
