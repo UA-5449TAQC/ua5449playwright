@@ -151,3 +151,8 @@ vite.config.ts.timestamp-*
 # Windows
 Thumbs.db
 
+*.d.ts
+*.d.ts.map
+*.js.map
+
+
