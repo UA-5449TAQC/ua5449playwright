@@ -1,8 +1,10 @@
+"use strict";
 // let a: number;
 // a = 10;
 // console.log(a);
 // a = "Hello";
 // console.log(a);
+Object.defineProperty(exports, "__esModule", { value: true });
 // let a: string;
 // const b: number = 10;
 // var c: boolean = false;
@@ -27,3 +29,4 @@
 // console.log(arr_string);
 // arr_string.push("d");
 // console.log(arr_string);  
+//# sourceMappingURL=lesson.js.map

@@ -1,10 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Color;
 (function (Color) {
     Color[Color["Red"] = 0] = "Red";
     Color[Color["Green"] = 1] = "Green";
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
-var c = Color.Green;
+let c = Color.Green;
 console.log(c); // Output: 1
 var ColorWithValuesRGB;
 (function (ColorWithValuesRGB) {
@@ -12,7 +14,7 @@ var ColorWithValuesRGB;
     ColorWithValuesRGB["Green"] = "00FF00";
     ColorWithValuesRGB["Blue"] = "0000FF";
 })(ColorWithValuesRGB || (ColorWithValuesRGB = {}));
-var c2 = ColorWithValuesRGB.Green;
+let c2 = ColorWithValuesRGB.Green;
 console.log(c2); // Output: "00FF00"
 c2 = ColorWithValuesRGB.Red;
 console.log(c2); // Output: "FF0000"
@@ -40,6 +42,7 @@ function getColorName2(color) {
 }
 console.log(getColorName(Color.Green)); // Output: "Green"
 function printColor(color) {
-    console.log("The color code is: ".concat(color));
+    console.log(`The color code is: ${color}`);
 }
 printColor(ColorWithValuesRGB.Green); // Output: "The color code is: 00FF00"
+//# sourceMappingURL=enum.js.map
